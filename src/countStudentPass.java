@@ -22,7 +22,8 @@ public class countStudentPass {
         int count = 0;
         for (int j = 0; j < array.length; j++) {
             System.out.print(array[j] + "\t");
-            if (array[j] >= 5 && array[j] <= 10) {
+            boolean isPass = array[j] >= 5 && array[j] <= 10;
+            if (isPass) {
                 count++;
             }
         }
